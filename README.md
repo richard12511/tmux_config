@@ -76,6 +76,10 @@ Labels reset if the tmux **server** restarts (resurrect/continuum restores layou
 | Start selection | `v` |
 | Copy selection to clipboard & exit | `Enter` (pipes to `pbcopy`) |
 | Cancel | `Escape` |
+| Copy by **mouse** | drag to select — copies to the clipboard on release |
+
+> Escape hatch: to bypass tmux's mouse capture and use WezTerm's *native* selection
+> (straight to the macOS clipboard), hold **`Shift`** while dragging, then `Cmd+C`.
 
 ### Session persistence
 tmux runs in a background server, so a session outlives the terminal window
